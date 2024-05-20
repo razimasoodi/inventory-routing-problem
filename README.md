@@ -18,8 +18,19 @@ We consider a distribution network where a product is shipped from a common supp
 
  
 The inventory holding cost is charged both at the supplier and at the customers. Inventory holding costs at the customers are taken into account in real inventory routing problems whenever the supplier agrees with the customers to require the payment of the products only when the products are sold by the customers. This is one of the incentives used by suppliers to move toward inventory routing systems.
-Denoting by h_0 the unit inventory cost at the supplier and by B_t the inventory level at the supplier at time t, the total inventory cost at the supplier is ∑_(t∈T')▒〖h_0 B_t 〗 where T^'=T∪{H+1}. The time H+1 is included in the computation of the inventory cost to take into account the consequences of the operations performed at time H. Denoting by h_i  the unit inventory cost of customer i, the total inventory cost over the time horizon is ∑_(t∈T')▒〖h_i I_it 〗.
+Denoting by h_0 the unit inventory cost at the supplier and by B_t the inventory level at the supplier at time t, the total inventory cost at the supplier is
 
-Shipments from the supplier to the customers can be performed at each time t by a vehicle of capacity C. The transportation cost c_ij from i to j is known, and c_ij=c_ji. Therefore, letting y_ij^t be a binary variable equal to 1 if j immediately follows I in the route traveled at time t and 0 otherwise, the total transportation cost is ∑_(i∈M')▒∑_(j∈M')▒∑_(t∈T)▒c_ij  y_ij^t where M^'=M∪{0}.
+![Screenshot (109)](https://github.com/razimasoodi/inventory-routing-problem/assets/170275013/3e6db4d6-0f57-4953-85fc-82634553efb1)
+
+
+The time H+1 is included in the computation of the inventory cost to take into account the consequences of the operations performed at time H. Denoting by h_i  the unit inventory cost of customer i, the total inventory cost over the time horizon is 
+
+![Screenshot (110)](https://github.com/razimasoodi/inventory-routing-problem/assets/170275013/cfece5d1-ce2a-4598-ba01-cf81bf8c2c33)
+
+
+Shipments from the supplier to the customers can be performed at each time t by a vehicle of capacity C. The transportation cost c_ij from i to j is known, and c_ij=c_ji. Therefore, letting y_ij^t be a binary variable equal to 1 if j immediately follows I in the route traveled at time t and 0 otherwise, the total transportation cost is
+
+![Screenshot (108)](https://github.com/razimasoodi/inventory-routing-problem/assets/170275013/2c44f6fa-2505-4ada-a005-abc616889f26)
+
 The objective of the considered IRP is to determine a feasible solution with minimum total cost. If the initial inventory of each customer is 0 and H = 1, the problem becomes a TSP and, thus, is NP-hard. To be feasible, a solution should not have any stockout at the supplier and at the customers (i.e., B_t≥0 and I_it≥0), the level of the inventory of each customer i should not be greater than its maximum level U_i , and the total quantity delivered at any given time should not exceed the vehicle capacity C.
 
