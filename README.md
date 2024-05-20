@@ -81,7 +81,8 @@ where
 
 The transportation cost ci,j between the customers i and j is computed as 
 
-ci,j = 
+ci,j = ![image](https://github.com/razimasoodi/inventory-routing-problem/assets/170275013/851ecee9-5508-4375-be08-fbc4a01969b0)
+
 
 
 where NINT is a function that rounds its argument to the nearest integer number.
