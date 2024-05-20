@@ -14,8 +14,9 @@ Problem Description
 
 We consider a distribution network where a product is shipped from a common supplier, denoted by 0, to a set M={1,2,…,n} of customers over a time horizon of H periods. At each discrete time t∈T={1,…,H} a quantity r_0t is produced at the supplier, and a quantity r_it is consumed at customer i∈M. Starting inventory level B_0 at the supplier is given. Each customer i has a maximum capacity U_i and a given starting inventory I_i0≤U_i. If customer i is visited at time t, then the quantity x_it shipped to the customer depends on the replenishment policy. We consider two different replenishment policies:
 
-	1. In the order-up-to-level (OU) policy, if customer i is served at time t, the quantity x_it is the difference between U_i and the current inventory level I_it of i.
-	2. In the maximum-level (ML) policy, the quantity x_it can take any nonnegative value that does not violate the capacity U_i . 
+	In the order-up-to-level (OU) policy, if customer i is served at time t, the quantity x_it is the difference between U_i and the current inventory level I_it of i.
+	In the maximum-level (ML) policy, the quantity x_it can take any nonnegative value that does not violate the capacity U_i . 
+
  
 The inventory holding cost is charged both at the supplier and at the customers. Inventory holding costs at the customers are taken into account in real inventory routing problems whenever the supplier agrees with the customers to require the payment of the products only when the products are sold by the customers. This is one of the incentives used by suppliers to move toward inventory routing systems.
 Denoting by h_0 the unit inventory cost at the supplier and by B_t the inventory level at the supplier at time t, the total inventory cost at the supplier is ∑_(t∈T')▒〖h_0 B_t 〗 where T^'=T∪{H+1}. The time H+1 is included in the computation of the inventory cost to take into account the consequences of the operations performed at time H. Denoting by h_i  the unit inventory cost of customer i, the total inventory cost over the time horizon is ∑_(t∈T')▒〖h_i I_it 〗.
