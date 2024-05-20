@@ -84,15 +84,10 @@ The transportation cost ci,j between the customers i and j is computed as
 ci,j = ![image](https://github.com/razimasoodi/inventory-routing-problem/assets/170275013/851ecee9-5508-4375-be08-fbc4a01969b0)
 
 
-
 where NINT is a function that rounds its argument to the nearest integer number.
 
-B) SOLUTION FILES
+Implement simulated annealing, Tabu Search, GA, Ant colony, and PSO on inventory-routing problem.
 
-There is a solution file for each class of instances. In each file:
-•	the name of the instance.
-•	the number of customers.
-•	the value of the solution using the ML or OU policy
-have been reported.
+
 
 
